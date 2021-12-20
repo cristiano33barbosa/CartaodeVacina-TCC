@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cantoesq"
+    tools:context=".LocalizacaoActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="233dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="56dp"
+        android:text="Vamos localizar um posto de saúde mais proximo da sua residência:"
+        android:textColor="@color/black"
+        android:textColorHighlight="#0C0101"
+        android:textColorHint="#0C0303"
+        android:textColorLink="#090202"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btPesquisa"
+        android:layout_width="204dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="224dp"
+        android:fontFamily="sans-serif-light"
+        android:foregroundTint="#F8F5F5"
+        android:text="Pesquisar Posto de Vacina"
+        android:textColor="#F1EBEB"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#090606"
+        android:textColorLink="#5B5463"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

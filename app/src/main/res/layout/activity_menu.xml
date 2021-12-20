@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cantoesq"
+    android:padding="20dp"
+    tools:context=".MenuActivity">
+
+
+    <View
+        android:id="@+id/bar"
+        style="@style/Bar"
+        android:layout_width="329dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="40dp"
+        android:background="#2832C2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        style="@style/Button2"
+        android:layout_width="316dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_menu"
+        android:drawableLeft="@drawable/clipartvaccines140"
+        android:stateListAnimator="@android:anim/fade_out"
+        android:text="@string/hist_rico_de_vacina"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar"
+        app:strokeColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4"
+        style="@style/Button2"
+        android:layout_width="316dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_menu"
+        android:drawableLeft="@drawable/agenda"
+        android:stateListAnimator="@android:anim/fade_out"
+        android:text="@string/agendamento"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button5"
+        style="@style/Button2"
+        android:layout_width="316dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_menu"
+        android:drawableLeft="@drawable/campanha"
+        android:stateListAnimator="@android:anim/fade_out"
+        android:text="@string/campanhas"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button6"
+        style="@style/Button2"
+        android:layout_width="313dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/button_menu"
+        android:drawableLeft="@drawable/smartphone_mapa"
+        android:stateListAnimator="@android:anim/fade_out"
+        android:text="@string/posto_de_vacina_o"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button7"
+        style="@style/Button2"
+        android:layout_width="316dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_menu"
+        android:drawableLeft="@drawable/certificado"
+        android:stateListAnimator="@android:anim/fade_out"
+        android:text="@string/certificado_vacina_o_covid_19"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button8"
+        style="@style/Button2"
+        android:layout_width="316dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_menu"
+        android:drawableLeft="@drawable/calendariovacinacao"
+        android:stateListAnimator="@android:anim/fade_out"
+        android:text="Calendário de Vacinas"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button9"
+        style="@style/Button2"
+        android:layout_width="316dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/button_menu"
+        android:drawableLeft="@drawable/vacinas"
+        android:stateListAnimator="@android:anim/fade_out"
+        android:text="Informação de Vacinas"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btSobre"
+        android:layout_width="56dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/sobre"
+        android:text="Sobre"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="@+id/bar"
+        app:layout_constraintStart_toStartOf="@+id/bar" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="58dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="293dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bar"
+        app:layout_constraintEnd_toEndOf="@+id/bar"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="@+id/bar"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="59dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/ol"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/bar" />
+
+    <TextView
+        android:id="@+id/textMensageLogin"
+        android:layout_width="87dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:text="CNS: 000000000000000"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/textMensageLogin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

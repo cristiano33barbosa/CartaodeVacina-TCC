@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="245dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo1" />
+
+    <View
+        android:id="@+id/constaineComponents"
+        style="@style/ContainerComponents"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/edit_login"
+        style="@style/Edit_Text"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text"
+        android:drawableRight="@drawable/ic_email"
+        android:hint="@string/login"
+        app:layout_constraintEnd_toEndOf="@id/constaineComponents"
+        app:layout_constraintStart_toStartOf="@id/constaineComponents"
+        app:layout_constraintTop_toTopOf="@id/constaineComponents" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/Edit_Text"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text"
+        android:drawableRight="@drawable/ic_eyes"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/constaineComponents"
+        app:layout_constraintStart_toStartOf="@id/constaineComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button10"
+        style="@style/Button"
+        android:background="@drawable/buttom"
+        android:backgroundTint="#495ED5"
+        android:text="@string/entar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/esqueceu_a_senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constaineComponents" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button11"
+        style="@style/Button1"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_cadastro"
+        android:backgroundTint="#32CD32"
+        android:text="Criar conta"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constaineComponents"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VacinacaoActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="335dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#1A32BC"
+        android:text="Historico de Vacinas"
+        android:textAlignment="center"
+        android:textColor="#F2FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btpfizer"
+        android:layout_width="153dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="124dp"
+        android:text="Pfzer 1ª dose 29/05/2021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bth1n1"
+        android:layout_width="153dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="124dp"
+        android:backgroundTint="#289600"
+        android:text="Influenza Gripe 10/06/2021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="260dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="193dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btpfizer"
+        app:srcCompat="@drawable/histotico1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
